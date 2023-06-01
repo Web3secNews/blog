@@ -80,7 +80,7 @@ Follow these steps to write and submit your blog:
    ```
    Replace `my-blog` with a descriptive branch name related to your blog content.
 
-4. **Write Your Blog**: Inside the cloned repository, navigate to the `blogs` directory. Create a new Markdown file with a meaningful name for your blog (e.g., `my-blog.md`). Use any text editor to write your blog using Markdown syntax. You can refer to the aforementioned Markdown Cheatsheet for assistance.
+4. (**Write Your Blog**) : Inside the cloned repository, navigate to the `blogs` directory. Create a new Markdown file with a meaningful name for your blog (e.g., `my-blog.md`). Use any text editor to write your blog using Markdown syntax. You can refer to the aforementioned Markdown Cheatsheet for assistance.
 
    Here is the list of `Mandatory` property for each post.
 
