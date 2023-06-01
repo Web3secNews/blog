@@ -1,5 +1,5 @@
 # Web3sec.News Blog 📄 
-Welcome to the Web3sec.News Blog repository, an `Open Source ultimate community-driven platform 📖` for the latest news and insights on web3 development, security, blockchain technology, and audits. 
+Welcome to the Web3sec.News Blog repository, an `Open Source ultimate community-driven platform 📖` for the latest news and insights on web3 development, security, jobs, blockchain technology, and audits. 
 
 Here's a *step-by-step* guide on how to write a blog in Markdown format and submit a pull request (PR) to get your blog published on our website. Even if you're not a tech-savvy person, this guide will help you contribute your valuable content effortlessly and receive proper credits as the writer of the blog as you write.
 
