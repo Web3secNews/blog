@@ -1,7 +1,7 @@
 # Web3sec.News Blog 📄 
 Welcome to the Web3sec.News Blog repository! 
 
-Here's a *step-by-step* guide on how to write a blog in Markdown format and submit a pull request (PR) to get your blog published on our website. Even if you're not a tech-savvy person, this guide will help you contribute your valuable content effortlessly. You will also receive proper credits as the writer of the blog.
+Here's a *step-by-step* guide on how to write a blog in Markdown format and submit a pull request (PR) to get your blog published on our website. Even if you're not a tech-savvy person, this guide will help you contribute your valuable content effortlessly and receive proper credits as the writer of the blog as you write.
 
 ![Web3secNews](public/og.png)
 
