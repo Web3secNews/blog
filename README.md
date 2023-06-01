@@ -82,6 +82,42 @@ Follow these steps to write and submit your blog:
 
 4. **Write Your Blog**: Inside the cloned repository, navigate to the `blogs` directory. Create a new Markdown file with a meaningful name for your blog (e.g., `my-blog.md`). Use any text editor to write your blog using Markdown syntax. You can refer to the aforementioned Markdown Cheatsheet for assistance.
 
+Here is the list of `Mandatory` property for each post.
+
+| Property          | Description                                                                     | Remark                                        |
+| ----------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| **_title_**       | Title of the post. (h1)                                                         | required<sup>\*</sup>                         |
+| **_description_** | Description of the post. Used in post excerpt and site description of the post. | required<sup>\*</sup>                         |
+| **_pubDatetime_** | Published datetime in ISO 8601 format.                                          | required<sup>\*</sup>                         |
+| **_tags_**        | Related keywords for this post. Written in array yaml format.                   | default = others                              |
+
+Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
+
+Title and description (excerpt) are important for search engine optimization (SEO) and thus Web3sec.News encourages to include these in blog posts.
+
+If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post.
+
+### Sample Frontmatter
+
+Here is the sample frontmatter for a blog post.
+
+```yaml
+# src/contents/sample-post.md
+---
+title: The title of the post
+pubDatetime: 2022-09-21T05:17:19Z
+postSlug: the-title-of-the-post
+featured: true
+draft: false
+tags:
+  - some
+  - example
+  - tags
+ogImage: ""
+description: This is the example description of the example post.
+---
+```
+
 5. **Add Credits**: At the end of your blog, make sure to include appropriate credits to yourself as the writer. Add a section with your name or preferred credit information. For example:
    ```
    **About the Writer**
