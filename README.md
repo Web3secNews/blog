@@ -82,20 +82,20 @@ Follow these steps to write and submit your blog:
 
 4. **Write Your Blog**: Inside the cloned repository, navigate to the `blogs` directory. Create a new Markdown file with a meaningful name for your blog (e.g., `my-blog.md`). Use any text editor to write your blog using Markdown syntax. You can refer to the aforementioned Markdown Cheatsheet for assistance.
 
-Here is the list of `Mandatory` property for each post.
+   Here is the list of `Mandatory` property for each post.
 
-| Property          | Description                                                                     | Remark                                        |
-| ----------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
-| **_title_**       | Title of the post. (h1)                                                         | required<sup>\*</sup>                         |
-| **_description_** | Description of the post. Used in post excerpt and site description of the post. | required<sup>\*</sup>                         |
-| **_pubDatetime_** | Published datetime in ISO 8601 format.                                          | required<sup>\*</sup>                         |
-| **_tags_**        | Related keywords for this post. Written in array yaml format.                   | default = others                              |
+   | Property          | Description                                                                     | Remark                                        |
+   | ----------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+   | **_title_**       | Title of the post. (h1)                                                         | required<sup>\*</sup>                         |
+   | **_description_** | Description of the post. Used in post excerpt and site description of the post. | required<sup>\*</sup>                         |
+   | **_pubDatetime_** | Published datetime in ISO 8601 format.                                          | required<sup>\*</sup>                         |
+   | **_tags_**        | Related keywords for this post. Written in array yaml format.                   | default = others                              |
 
-Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
+   Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
 
-Title and description (excerpt) are important for search engine optimization (SEO) and thus Web3sec.News encourages to include these in blog posts.
+   Title and description (excerpt) are important for search engine optimization (SEO) and thus Web3sec.News encourages to include these in blog posts.
 
-If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post.
+   If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post.
 
 ### Sample Frontmatter
 
