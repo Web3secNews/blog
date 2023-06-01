@@ -7,11 +7,12 @@ Here's a *step-by-step* guide on how to write a blog in Markdown format and subm
 
 ## 🔥 Features
 
-- [x] Share twitter threads as a blog of your own
+- [x] Share twitter threads as a blog of your own 🕊️
+- [x] Enter Any URL to get it's MD file, make some changes & raise a PR to publish 💪
 - [x] Publish your own blog
 - [x] Share tips from your own experience
-- [x] Use appropriate hashtags for better visibility
-- [x] Get Credits for writing
+- [x] Use appropriate hashtags for better visibility #️⃣
+- [x] Get Credits for writing 🫵
 - [x] Increase your chance to get noticed in the community
 - [x] Show this as a proof of work for your next content-writing job
 - [x] SEO-friendly
