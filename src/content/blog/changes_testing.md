@@ -1,7 +1,7 @@
 ---
 author: Chirag Agrawal
 pubDatetime: 2023-05-27T19:01:46.357583Z
-title: Test Blog Post
+title: WEB3SEC.NEWS we goo 
 postSlug: test post
 featured: false
 draft: false
