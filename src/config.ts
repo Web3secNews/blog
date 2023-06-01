@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Chirag Agarwal",
   desc: "A blog about web3 security news and tutorials.",
   title: "Web3Sec News",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
