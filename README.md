@@ -22,7 +22,6 @@ Here's a *step-by-step* guide on how to write a blog in Markdown format and subm
 - [x] Complete MD support
 
 ## 🚀 Project Structure
-
 Inside of Web3sec.News, you'll see the following folders and files:
 
 ```bash
@@ -60,14 +59,12 @@ Any static assets, like images, can be placed in the `public/` directory.
 All blog posts are stored in `src/content/blog` directory.
 
 ## 🔎 Prerequisites
-
 To get started, make sure you have the following:
 
 - An account on [GitHub](https://github.com/). If you don't have one, you can sign up for free.
 - Basic knowledge of Markdown syntax. If you're new to Markdown, check out this [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) to get familiar with the syntax.
 
 ## ✍️ Writing and Submitting a Blog
-
 Follow these steps to write and submit your blog:
 
 1. **Fork the Repository**: Visit the [Web3sec.News Blog repository](https://github.com/Web3secNews/blog/) and click on the "Fork" button in the top-right corner of the page. This action will create a copy of the repository under your GitHub account.
@@ -112,7 +109,6 @@ Congratulations! You've successfully submitted your blog for review and publishi
 
 
 ## ✨ Feedback & Suggestions
-
 If you have any suggestions/feedback, you can contact me via [my email](mailto:chirag@web3sec.news). Alternatively, feel free to open an issue if you find bugs or want to request new features.
 
 
