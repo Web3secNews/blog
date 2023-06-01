@@ -69,7 +69,7 @@ To get started, make sure you have the following:
 
 Follow these steps to write and submit your blog:
 
-1. **Fork the Repository**: Visit the [NerdFeeds Blog repository](https://github.com/NerdFeeds/blog) and click on the "Fork" button in the top-right corner of the page. This action will create a copy of the repository under your GitHub account.
+1. **Fork the Repository**: Visit the [Web3sec.News Blog repository](https://github.com/Web3secNews/blog/) and click on the "Fork" button in the top-right corner of the page. This action will create a copy of the repository under your GitHub account.
 
 2. **Clone the Forked Repository**: On your GitHub profile, locate the forked repository (`yourusername/blog`). Click on the "Code" button and copy the repository's URL. Open your preferred command-line interface, navigate to a directory where you want to store the repository, and execute the following command:
    ```
@@ -103,7 +103,7 @@ Follow these steps to write and submit your blog:
    git push origin my-blog
    ```
 
-8. **Submit a Pull Request**: Once you've pushed your changes to your forked repository, navigate to the original [NerdFeeds Blog repository](https://github.com/NerdFeeds/blog) on GitHub. You should see a banner with a message stating that your recently pushed branch has differences. Click on the "Compare & pull request" button.
+8. **Submit a Pull Request**: Once you've pushed your changes to your forked repository, navigate to the original [Web3sec.News Blog repository](https://github.com/Web3secNews/blog/) on GitHub. You should see a banner with a message stating that your recently pushed branch has differences. Click on the "Compare & pull request" button.
 
 9. **Review and Submit**: On the PR page, you can review the changes you made. Provide a descriptive title and description for your PR, summarizing your blog's content. Once you're satisfied, click on the "Create pull request" button.
 
