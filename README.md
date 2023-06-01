@@ -91,11 +91,11 @@ Follow these steps to write and submit your blog:
    | **_pubDatetime_** | Published datetime in ISO 8601 format.                                          | required<sup>\*</sup>                         |
    | **_tags_**        | Related keywords for this post. Written in array yaml format.                   | default = others                              |
 
-   Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
+   - Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
 
-   Title and description (excerpt) are important for search engine optimization (SEO) and thus Web3sec.News encourages to include these in blog posts.
+   - Title and description (excerpt) are important for search engine optimization (SEO) and thus Web3sec.News encourages to include these in blog posts.
 
-   If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post.
+   - If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post.
 
    ### Sample Frontmatter
 
