@@ -31,7 +31,7 @@ Inside of Web3sec.News, you'll see the following folders and files:
 │   │   └── logo.svg
 │   │   └── logo.png
 │   └── favicon.ico
-│   └── og.jpg
+│   └── og.png
 │   └── robots.txt
 │   └── toggle-theme.js
 ├── src/
