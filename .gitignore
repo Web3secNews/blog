@@ -33,3 +33,7 @@ pnpm-debug.log*
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+.vercel
+scripts/articles/*
+scripts/to-markdown
+# ^ as it is bloated asf
