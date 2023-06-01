@@ -1,45 +1,28 @@
-# AstroPaper 📄
+# Web3sec.News Blog 📄 
+Welcome to the Web3sec.News Blog repository! 
 
-![AstroPaper](public/astropaper-og.jpg)
-![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![GitHub](https://img.shields.io/github/license/satnaing/astro-paper?color=%232F3741&style=for-the-badge)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white&style=for-the-badge)](https://conventionalcommits.org)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
+Here's a *step-by-step* guide on how to write a blog in Markdown format and submit a pull request (PR) to get your blog published on our website. Even if you're not a tech-savvy person, this guide will help you contribute your valuable content effortlessly. You will also receive proper credits as the writer of the blog.
 
-AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro blog theme. This theme is designed and crafted based on [my personal blog](https://satnaing.dev/blog).
-
-This theme follows best practices and provides accessibility out of the box. Light and dark mode are supported by default. Moreover, additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. Read [the blog posts](https://astro-paper.pages.dev/posts/) or check [the README Documentation Section](#-documentation) for more info.
+![Web3secNews](public/og.png)
 
 ## 🔥 Features
 
-- [x] type-safe markdown
-- [x] super fast performance
-- [x] accessible (Keyboard/VoiceOver)
-- [x] responsive (mobile ~ desktops)
+- [x] Share twitter threads as a blog of your own
+- [x] Publish your own blog
+- [x] Share tips from your own experience
+- [x] Use appropriate hashtags for better visibility
+- [x] Get Credits for writing
+- [x] Increase your chance to get noticed in the community
+- [x] Show this as a proof of work for your next content-writing job
 - [x] SEO-friendly
 - [x] light & dark mode
 - [x] fuzzy search
-- [x] draft posts & pagination
-- [x] sitemap & rss feed
-- [x] followed best practices
-- [x] highly customizable
-- [x] dynamic OG image generation for blog posts [#15](https://github.com/satnaing/astro-paper/pull/15) ([Blog Post](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/))
-
-_Note: I've tested screen-reader accessibility of AstroPaper using **VoiceOver** on Mac and **TalkBack** on Android. I couldn't test all other screen-readers out there. However, accessibility enhancements in AstroPaper should be working fine on others as well._
-
-## ✅ Lighthouse Score
-
-<p align="center">
-  <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fastro-paper.pages.dev%2F&form_factor=desktop">
-    <img width="710" alt="AstroPaper Lighthouse Score" src="AstroPaper-lighthouse-score.svg">
-  <a>
-</p>
+- [x] dynamic OG image generation for blog posts
+- [x] Complete MD support
 
 ## 🚀 Project Structure
 
-Inside of AstroPaper, you'll see the following folders and files:
+Inside of Web3sec.News, you'll see the following folders and files:
 
 ```bash
 /
@@ -47,8 +30,8 @@ Inside of AstroPaper, you'll see the following folders and files:
 │   ├── assets/
 │   │   └── logo.svg
 │   │   └── logo.png
-│   └── favicon.svg
-│   └── astropaper-og.jpg
+│   └── favicon.ico
+│   └── og.jpg
 │   └── robots.txt
 │   └── toggle-theme.js
 ├── src/
@@ -69,85 +52,69 @@ Inside of AstroPaper, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Web3sec.news looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
 All blog posts are stored in `src/content/blog` directory.
 
-## 📖 Documentation
+## 🔎 Prerequisites
 
-Documentation can be read in two formats\_ _markdown_ & _blog post_.
+To get started, make sure you have the following:
 
-- Configuration - [markdown](src/content/blog/how-to-configure-astropaper-theme.md) | [blog post](https://astro-paper.pages.dev/posts/how-to-configure-astropaper-theme/)
-- Add Posts - [markdown](src/content/blog/adding-new-post.md) | [blog post](https://astro-paper.pages.dev/posts/adding-new-posts-in-astropaper-theme/)
-- Customize Color Schemes - [markdown](src/content/blog/customizing-astropaper-theme-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/)
-- Predefined Color Schemes - [markdown](src/content/blog/predefined-color-schemes.md) | [blog post](https://astro-paper.pages.dev/posts/predefined-color-schemes/)
+- An account on [GitHub](https://github.com/). If you don't have one, you can sign up for free.
+- Basic knowledge of Markdown syntax. If you're new to Markdown, check out this [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) to get familiar with the syntax.
 
-> For AstroPaper v1, check out [this branch](https://github.com/satnaing/astro-paper/tree/astro-paper-v1) and this [live URL](https://astro-paper-v1.astro-paper.pages.dev/)
+## ✍️ Writing and Submitting a Blog
 
-## 💻 Tech Stack
+Follow these steps to write and submit your blog:
 
-**Main Framework** - [Astro](https://astro.build/)  
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
-**Component Framework** - [ReactJS](https://reactjs.org/)  
-**Styling** - [TailwindCSS](https://tailwindcss.com/)  
-**UI/UX** - [Figma](https://figma.com)  
-**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
-**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
-**Code Formatting** - [Prettier](https://prettier.io/)  
-**Deployment** - [Cloudflare Pages](https://pages.cloudflare.com/)  
-**Illustration in About Page** - [https://freesvgillustration.com](https://freesvgillustration.com/)  
-**Linting** - [ESLint](https://eslint.org)
+1. **Fork the Repository**: Visit the [NerdFeeds Blog repository](https://github.com/NerdFeeds/blog) and click on the "Fork" button in the top-right corner of the page. This action will create a copy of the repository under your GitHub account.
 
-## 👨🏻‍💻 Running Locally
+2. **Clone the Forked Repository**: On your GitHub profile, locate the forked repository (`yourusername/blog`). Click on the "Code" button and copy the repository's URL. Open your preferred command-line interface, navigate to a directory where you want to store the repository, and execute the following command:
+   ```
+   git clone <repository-url>
+   ```
 
-The easiest way to run this project locally is to run the following command in your desired directory.
+3. **Create a New Branch**: Change to the repository's directory by running `cd blog`. Create a new branch for your blog using the following command:
+   ```
+   git checkout -b my-blog
+   ```
+   Replace `my-blog` with a descriptive branch name related to your blog content.
 
-```bash
-# npm 6.x
-npm create astro@latest --template satnaing/astro-paper
+4. **Write Your Blog**: Inside the cloned repository, navigate to the `blogs` directory. Create a new Markdown file with a meaningful name for your blog (e.g., `my-blog.md`). Use any text editor to write your blog using Markdown syntax. You can refer to the aforementioned Markdown Cheatsheet for assistance.
 
-# npm 7+, extra double-dash is needed:
-npm create astro@latest -- --template satnaing/astro-paper
+5. **Add Credits**: At the end of your blog, make sure to include appropriate credits to yourself as the writer. Add a section with your name or preferred credit information. For example:
+   ```
+   **About the Writer**
+   
+   - Name: Your Name
+   - Website: Your Website (optional)
+   - GitHub: [@your-username](https://github.com/your-username)
+   - Twitter: [@your-handle](https://twitter.com/your-handle) (optional)
+   ```
 
-# yarn
-yarn create astro --template satnaing/astro-paper
-```
+6. **Save Your Changes**: After writing and adding credits, save the file.
 
-## Google Site Verification (optional)
+7. **Commit and Push**: In your command-line interface, run the following commands to commit and push your changes:
+   ```
+   git add blogs/my-blog.md
+   git commit -m "Add my blog: My Blog Title"
+   git push origin my-blog
+   ```
 
-You can easily add your [Google Site Verification HTML tag](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) in AstroPaper using environment variable. This step is optional. If you don't add the following env variable, the google-site-verification tag won't appear in the html `<head>` section.
+8. **Submit a Pull Request**: Once you've pushed your changes to your forked repository, navigate to the original [NerdFeeds Blog repository](https://github.com/NerdFeeds/blog) on GitHub. You should see a banner with a message stating that your recently pushed branch has differences. Click on the "Compare & pull request" button.
 
-```bash
-# in your environment variable file (.env)
-PUBLIC_GOOGLE_SITE_VERIFICATION=your-google-site-verification-value
-```
+9. **Review and Submit**: On the PR page, you can review the changes you made. Provide a descriptive title and description for your PR, summarizing your blog's content. Once you're satisfied, click on the "Create pull request" button.
 
-## 🧞 Commands
+Congratulations! You've successfully submitted your blog for review and publishing
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                                                                                                           |
-| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| `npm install`          | Installs dependencies                                                                                                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`                                                                                      |
-| `npm run build`        | Build your production site to `./dist/`                                                                                          |
-| `npm run preview`      | Preview your build locally, before deploying                                                                                     |
-| `npm run format:check` | Check code format with Prettier                                                                                                  |
-| `npm run format`       | Format codes with Prettier                                                                                                       |
-| `npm run sync`         | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `npm run cz`           | Commit code changes with commitizen                                                                                              |
-| `npm run lint`         | Lint with ESLint                                                                                                                 |
 
 ## ✨ Feedback & Suggestions
 
-If you have any suggestions/feedback, you can contact me via [my email](mailto:contact@satnaing.dev). Alternatively, feel free to open an issue if you find bugs or want to request new features.
+If you have any suggestions/feedback, you can contact me via [my email](mailto:chirag@web3sec.news). Alternatively, feel free to open an issue if you find bugs or want to request new features.
 
-## 📜 License
-
-Licensed under the MIT License, Copyright © 2023
 
 ---
 
-Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻
+Made with 🤍 by [Chirag Agrawal](https://twitter.com/__Raiders) 👨🏻‍💻
