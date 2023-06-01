@@ -147,6 +147,7 @@ Congratulations! You've successfully submitted your blog for review and publishi
 ## ✨ Feedback & Suggestions
 If you have any suggestions/feedback, you can contact me via [my email](mailto:chirag@web3sec.news). Alternatively, feel free to open an issue if you find bugs or want to request new features.
 
+#### Feel free to give it a ⭐ & share this with the Web3 community 🥳
 
 ---
 
