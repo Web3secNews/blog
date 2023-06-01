@@ -97,26 +97,26 @@ Follow these steps to write and submit your blog:
 
    If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post.
 
-### Sample Frontmatter
+   ### Sample Frontmatter
 
-Here is the sample frontmatter for a blog post.
+   Here is the sample frontmatter for a blog post.
 
-```yaml
-# src/contents/sample-post.md
----
-title: The title of the post
-pubDatetime: 2022-09-21T05:17:19Z
-postSlug: the-title-of-the-post
-featured: true
-draft: false
-tags:
-  - some
-  - example
-  - tags
-ogImage: ""
-description: This is the example description of the example post.
----
-```
+   ```yaml
+   # src/contents/sample-post.md
+   ---
+   title: The title of the post
+   pubDatetime: 2022-09-21T05:17:19Z
+   postSlug: the-title-of-the-post
+   featured: true
+   draft: false
+   tags:
+     - some
+     - example
+     - tags
+   ogImage: ""
+   description: This is the example description of the example post.
+   ---
+   ```
 
 5. **Add Credits**: At the end of your blog, make sure to include appropriate credits to yourself as the writer. Add a section with your name or preferred credit information. For example:
    ```
