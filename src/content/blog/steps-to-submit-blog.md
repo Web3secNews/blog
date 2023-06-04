@@ -30,7 +30,7 @@ Detailed Steps oh how to Submit & get your blog published.
 
 > use `>` symbol to create blocks to highlight difference sections
 
-- How to embed External links `[linkTitle](URL)` --> [Visit Web3sec.news](https://web3sec.news) 
+- How to embed External links `[Link Title](URL)` --> [Visit Web3sec.news](https://web3sec.news) 
 
 - `Embedding Custom Images inside the blog`
 > There are 2 ways to achieve this.
