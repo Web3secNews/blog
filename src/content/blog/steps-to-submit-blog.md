@@ -40,6 +40,7 @@ Detailed Steps oh how to Submit & get your blog published.
 - Finally Use this Syntax to embed your Image `![image_name](<image_url>)`
 
 **Example** 👇
+
 ![images](https://github.com/Web3secNews/blog/blob/main/public/media/embed-image.png?raw=true)
 > **NOTE** : You can use `tags` to mention the category of your blog for example hacks,news,smartcontracts,solidity anyone of your choice can be used. This will help categories your blogs much effeciently & help community members search blogs relevant to their interest.
 
