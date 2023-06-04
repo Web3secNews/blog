@@ -55,6 +55,7 @@ Blog on how to write a blog XD
 
 > you can give ypur info here
 
-- Name: Hemendra Sharma
-- GitHub: [HemendraSharma04](https://github.com/HemendraSharma04)
-- Twitter: [Codeninja04](https://twitter.com/Codeninja04)
+- Name: Web3sec News
+- Website: [Web3sec.news](https://web3sec.news/)
+- GitHub: [Web3secNews](https://github.com/Web3secNews/blog)
+- Twitter: [Raiders](https://twitter.com/__Raiders)
