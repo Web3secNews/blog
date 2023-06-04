@@ -1,62 +1,56 @@
 ---
-author: Hemendra Sharma
+author: Chirag Agrawal
 pubDatetime: 2023-06-04T16:25:53.500Z
-title: How To Submit Blog Post
+title: How To Submit Blog
 featured: true
-draft: false
 tags:
-  - docs
-  - release
   - web3sec
-  - test
-ogImage: "https://docs.astro.build/assets/full-logo-light.png"
-description: How To Submit blogs
+description: How To Submit your blogs for Review
 ---
 
 ## Table of contents
 
-## Intro
+## Submitting blog
+Detailed Steps oh how to Submit & get your blog published.
 
-Blog on how to write a blog XD
+- Start with forking this [blog](https://github.com/Web3secNews/blog) repo.
+- Create a MD file for your blog [here](https://github.com/Web3secNews/blog/tree/main/src/content/blog) 
+- Add supporting media files like images & assets [here](https://github.com/Web3secNews/blog/tree/main/public/media)
+- Create a PR to the main repository for review & getting it published 🚀
+- You are all Done 🥳
 
-> This blog will give you an overview on how to write a blog.
+## Start Writing your blog
 
-- Just fork [this](https://github.com/Web3secNews/blog) repo and make a PR to the main repo and we will merge it 🚀
-
-- GO [here](https://github.com/Web3secNews/blog/tree/main/src/content/blog) and create a new file, you can check the already existing files for reference
-
-## HOW TO SUBMIT THE BLOG
-
-**This file is in md format so you can use HTML tags and other method which are shown below to add contents:**
+**Since MD format supports HTML tags and other method, we will make use of it to make more attractive blogs reference to some of those tags mentioned below**
 
 - some useful HTML tags that you can use are `<br>` `<li>` `<p>` tags etc
-- use `**text**` to make it bold
+- use `**text**` to make it **bold**
 - use `-` to make points like `- This is point` will be shown as
 - use `_text_` to write in _italics_
 
-> use `>` symbol to create text like this 👍🏻
+> use `>` symbol to create blocks to highlight difference sections
 
-- How to apply links `[link](url)` --> [link](https://web3sec.news) , Also please make sure to give url like `https://<url_link>`
+- How to embed External links `[linkTitle](URL)` --> [Visit Web3sec.news](https://web3sec.news) 
 
-- How to add images
+- `Embedding Custom Images inside the blog`
+> There are 2 ways to achieve this.
+- Add images to [public/media](https://github.com/Web3secNews/blog/public/media/test.png) folder and copy the url.
+- Upload Images at some other platform or drive & Get url
 
+- Finally Use this Syntax to embed your Image `![image_name](<image_url>)`
 
-> To add image here either add images to [images](https://github.com/Web3secNews/blog/public/media/test.png) folder and copy the url or get url from somewhere else or use this `![image_name](<image_url>)`
+- **Example** 👇
+- ![images](https://github.com/Web3secNews/blog/blob/main/public/media/embed-image.png?raw=true)
+- **NOTE** : You can use `tags` to mention the category of your blog for example hacks,news,smartcontracts,solidity anyone of your choice can be used. This will help categories your blogs much effeciently & help community members search blogs relevant to their interest.
 
-
-![images](https://github.com/Web3secNews/blog/blob/main/public/media/test-blog.png?raw=true)
-
-> NOTE : you can add tags by using tag section which is shown in above image for reference --> [link](https://github.com/Web3secNews/blog/blob/main/src/content/blog/test-new-blog.md)
-
-<p> This text is in inside a p tag </p>
-
-> `<p>` like this `</p>`
+- You can use `<p> Some content here </p>` to write description & detailed steps in a form of paragraph.
+- **Example** 👇
+   <p> Stay ahead of the game with Web3Sec, the ultimate community-driven platform for the latest news and insights on web3 security, blockchain technology, and audits. Contribute, publish, and earn recognition! Share your web3 dev & security insights with the community in just 3 steps on this open-source platform.</p>
 
 ## About the Writer
 
-> you can give your info here
-
-- Name: Web3sec News
+> Write about yourself by entering the below details
+- Name: Chirag Agrawal
 - Website: [Web3sec.news](https://web3sec.news/)
 - GitHub: [Web3secNews](https://github.com/Web3secNews/blog)
 - Twitter: [Raiders](https://twitter.com/__Raiders)

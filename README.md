@@ -102,18 +102,15 @@ Follow these steps to write and submit your blog:
    Here is the sample frontmatter for a blog post.
 
    ```yaml
-   # src/contents/sample-post.md
+   # src/content/blog/sample-post.md
    ---
-   title: The title of the post
-   pubDatetime: 2022-09-21T05:17:19Z
-   postSlug: the-title-of-the-post
-   featured: true
-   draft: false
+   title: How to Submit a blog
+   author: Web3sec.News
+   pubDatetime: 2023-06-04T05:17:19Z
    tags:
-     - some
-     - example
-     - tags
-   ogImage: ""
+     - web3sec
+     - smart contracts
+     - hacks
    description: This is the example description of the example post.
    ---
    ```
