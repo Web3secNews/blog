@@ -39,12 +39,13 @@ Detailed Steps oh how to Submit & get your blog published.
 
 - Finally Use this Syntax to embed your Image `![image_name](<image_url>)`
 
-- **Example** 👇
-- ![images](https://github.com/Web3secNews/blog/blob/main/public/media/embed-image.png?raw=true)
-- **NOTE** : You can use `tags` to mention the category of your blog for example hacks,news,smartcontracts,solidity anyone of your choice can be used. This will help categories your blogs much effeciently & help community members search blogs relevant to their interest.
+**Example** 👇
+![images](https://github.com/Web3secNews/blog/blob/main/public/media/embed-image.png?raw=true)
+> **NOTE** : You can use `tags` to mention the category of your blog for example hacks,news,smartcontracts,solidity anyone of your choice can be used. This will help categories your blogs much effeciently & help community members search blogs relevant to their interest.
 
-- You can use `<p> Some content here </p>` to write description & detailed steps in a form of paragraph.
-- **Example** 👇
+- You can use `<p>` Some content here `</p>` to write description & detailed steps in a form of paragraph.
+
+**Example** 👇
    <p> Stay ahead of the game with Web3Sec, the ultimate community-driven platform for the latest news and insights on web3 security, blockchain technology, and audits. Contribute, publish, and earn recognition! Share your web3 dev & security insights with the community in just 3 steps on this open-source platform.</p>
 
 ## About the Writer
