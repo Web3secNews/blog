@@ -41,7 +41,7 @@ Blog on how to write a blog XD
 
 - How to add images
 
-> To add image here either add images to [images](https://github.com/Web3secNews/blog/images/test.png) folder and copy the url or get url from somewhere else or use this `![image_name](<image_url>)`
+> To add image here either add images to [images](https://github.com/Web3secNews/blog/images/test-blog.png) folder and copy the url or get url from somewhere else or use this `![image_name](<image_url>)`
 
 ![images](https://github.com/Web3secNews/blog/images/test.png)
 
