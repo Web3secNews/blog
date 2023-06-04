@@ -1,18 +1,17 @@
 ---
 author: Hemendra Sharma
 pubDatetime: 2023-06-04T16:25:53.500Z
-title: Test Blog Post
+title: How To Write Blog Post
 featured: true
 draft: false
 tags:
   - docs
   - release
   - web3sec
+  - test
 ogImage: "https://docs.astro.build/assets/full-logo-light.png"
-description: Testing blog feature
+description: How To Write blogs
 ---
-
-New feature in AstroPaper v1.4.0, introducing dynamic OG image generation for blog posts.
 
 ## Table of contents
 
@@ -41,9 +40,9 @@ Blog on how to write a blog XD
 
 - How to add images
 
-> To add image here either add images to [images](https://github.com/Web3secNews/blog/images/test.png) folder and copy the url or get url from somewhere else or use this `![image_name](<image_url>)`
+> To add image here either add images to [images](https://github.com/Web3secNews/blog/public/media/test.png) folder and copy the url or get url from somewhere else or use this `![image_name](<image_url>)`
 
-![images](https://github.com/Web3secNews/blog/images/test.png)
+![images](https://github.com/Web3secNews/blog/blob/main/public/media/test-blog.png?raw=true)
 
 > NOTE : you can add tags by using tag section which is shown in above image for reference --> [link](https://github.com/Web3secNews/blog/blob/main/src/content/blog/test-new-blog.md)
 
@@ -53,7 +52,7 @@ Blog on how to write a blog XD
 
 ## About the Writer
 
-> you can give ypur info here
+> you can give your info here
 
 - Name: Web3sec News
 - Website: [Web3sec.news](https://web3sec.news/)
