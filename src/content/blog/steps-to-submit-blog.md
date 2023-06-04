@@ -1,7 +1,7 @@
 ---
 author: Hemendra Sharma
 pubDatetime: 2023-06-04T16:25:53.500Z
-title: How To Write Blog Post
+title: How To Submit Blog Post
 featured: true
 draft: false
 tags:
@@ -10,7 +10,7 @@ tags:
   - web3sec
   - test
 ogImage: "https://docs.astro.build/assets/full-logo-light.png"
-description: How To Write blogs
+description: How To Submit blogs
 ---
 
 ## Table of contents
@@ -25,7 +25,7 @@ Blog on how to write a blog XD
 
 - GO [here](https://github.com/Web3secNews/blog/tree/main/src/content/blog) and create a new file, you can check the already existing files for reference
 
-## HOW TO WRITE THE BLOG
+## HOW TO SUBMIT THE BLOG
 
 **This file is in md format so you can use HTML tags and other method which are shown below to add contents:**
 
