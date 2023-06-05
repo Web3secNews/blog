@@ -138,8 +138,9 @@ Follow these steps to write and submit your blog:
 
 9. **Review and Submit**: On the PR page, you can review the changes you made. Provide a descriptive title and description for your PR, summarizing your blog's content. Once you're satisfied, click on the "Create pull request" button.
 
-Congratulations! You've successfully submitted your blog for review and publishing
+**[For More Information](https://blog.web3sec.news/posts/how-to-submit-blog/)**
 
+Congratulations! You've successfully submitted your blog for review and publishing
 
 ## ✨ Feedback & Suggestions
 If you have any suggestions/feedback, you can contact me via [my email](mailto:chirag@web3sec.news). Alternatively, feel free to open an issue if you find bugs or want to request new features.
