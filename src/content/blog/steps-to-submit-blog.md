@@ -49,6 +49,7 @@ Detailed Steps oh how to Submit & get your blog published.
 **Example** 👇
    <p> Stay ahead of the game with Web3Sec, the ultimate community-driven platform for the latest news and insights on web3 security, blockchain technology, and audits. Contribute, publish, and earn recognition! Share your web3 dev & security insights with the community in just 3 steps on this open-source platform.</p>
 
+**[For More Information](https://github.com/Web3secNews/blog/#%EF%B8%8F-writing-and-submitting-a-blog)**
 ## About the Writer
 
 > Write about yourself by entering the below details
