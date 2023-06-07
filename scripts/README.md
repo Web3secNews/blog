@@ -39,7 +39,7 @@
    ```
    
     ### Available flags
-    |     |     |
+    | Commands    |   description  |
     | --- | --- |
     | `--no-markdown` | only output in plain text
     | `--write` | write to `articles` dir
