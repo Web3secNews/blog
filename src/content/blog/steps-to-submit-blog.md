@@ -38,6 +38,7 @@ Detailed Steps oh how to Submit & get your blog published.
 - Upload Images at some other platform or drive & Get url
 
 - Finally Use this Syntax to embed your Image `![image_name](<image_url>)`
+> Must have headers to get your blogs published are **title** , **author** , **pubDatetime** , **tags** & **description** after which you can add your content of the blog.
 
 **Example** 👇
 
