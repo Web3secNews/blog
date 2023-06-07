@@ -1,6 +1,7 @@
 
-To install Deno and run your TypeScript file, follow these steps:
+### 🪲 To AUTOMATICALLY create **MD FILE** 📃 from any of your `existing blogs/resource`  follow these steps :
 
+   
 1. Open a terminal or command prompt.
 
 2. Install Deno by running the following command:
@@ -30,10 +31,13 @@ To install Deno and run your TypeScript file, follow these steps:
 4. To run your TypeScript file, use the `deno run` command followed by the file path:
    ```
    deno run -A ./src/to-markdown.ts
-   Example usage: to-markdown {url}
-
    ```
-
+   
+   ### Example usage: 
+   ```
+   to-markdown {url}
+   ```
+   
     ### Available flags
     |     |     |
     | --- | --- |
