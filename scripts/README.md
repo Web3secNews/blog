@@ -1,5 +1,5 @@
 
-### 🪲 To AUTOMATICALLY create **MD FILE** 📃 from any of your `existing blogs/resource`  follow these steps :
+### 🪲 Steps To AUTOMATICALLY create **MD FILE** 📃 from any of your `existing blogs/resource`
 
    
 1. Open a terminal or command prompt.
