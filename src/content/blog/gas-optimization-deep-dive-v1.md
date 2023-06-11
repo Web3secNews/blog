@@ -1,12 +1,12 @@
 ---
 author: Hemendra Sharma
 pubDatetime: 2023-06-11T10:28:17Z
-title: Gas Optimization Techniques part 1
+title: Gas Optimization Deep Dive v1
 
 tags:
   - web3sec
   - gas optimization
-description: Techniques used in gas optimization with examples part 1
+description: Boosting Optimization and Reducing Costs
 ---
 
 <em>Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on [web3sec.news](https://web3sec.news/)
@@ -20,7 +20,7 @@ from the latest news to blockchain tech and audits, and receive feedback and exc
 
 ## GAS OPTIMIZATION TECHNIQUES
 
-### 1. Dont initialize variables
+### 1. Don't initialize variables
 
 Initializing variables in Solidity can consume unnecessary gas if the variables are subsequently assigned new values before being accessed. Therefore, avoiding unnecessary variable initialization can help save gas in certain scenarios.
 
@@ -104,7 +104,7 @@ contract GasSavingsExample {
 
 Thank you for reading ✌🏻
 
-**Please feel free to share your feedback & stay tuned for the upcoming “Gas optimization Techniques✅**
+**Please feel free to share your feedback & stay tuned for the upcoming “Gas Optimization Deep Dive Series ✅**
 
 > Written By
 
