@@ -87,6 +87,7 @@ Follow these steps to write and submit your blog:
    | Property          | Description                                                                     | Remark                                        |
    | ----------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
    | **_title_**       | Title of the post. (h1)                                                         | required<sup>\*</sup>                         |
+   | author	           |  Author of the post                                                             |  default = SITE.author  |
    | **_description_** | Description of the post. Used in post excerpt and site description of the post. | required<sup>\*</sup>                         |
    | **_pubDatetime_** | Published datetime in ISO 8601 format.                                          | required<sup>\*</sup>                         |
    | **_tags_**        | Related keywords for this post. Written in array yaml format.                   | default = others                              |
