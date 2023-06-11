@@ -9,12 +9,12 @@ tags:
   - vulnerability
 ---
 
-Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on [web3sec.news](https://web3sec.news/)
+<em>Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on [web3sec.news](https://web3sec.news/)
 
 The ultimate open-source platform for sharing Web3 security insights. Publish your [blog topics](https://github.com/Web3secNews/blog), 
-from the latest news to blockchain tech and audits, and receive feedback and exciting opportunities.   
+from the latest news to blockchain tech and audits, and receive feedback and exciting opportunities.</em>
 
-[Join the vibrant Web3 security community today!](https://discord.com/invite/CseAxvtrZ3)
+[Join the vibrant Web3 security community today 🤝 ](https://discord.com/invite/CseAxvtrZ3)
 
 ## Table of contents
 
@@ -42,9 +42,8 @@ from the latest news to blockchain tech and audits, and receive feedback and exc
 
 Thank you for reading ✌🏻
 
-please feel free to share your feedback & stay tuned for the upcoming “Smart Contract Security Best Practices Checklist ✅ ”
+Please feel free to share your feedback & stay tuned for the upcoming “Smart Contract Security Best Practices Checklist ✅ ”
 
-> **Written By**
-
+> Written By
 - Name: Chirag Agrawal
 - Twitter: [Raiders](https://twitter.com/__Raiders)
