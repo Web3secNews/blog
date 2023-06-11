@@ -1,6 +1,6 @@
 ---
 author: Hemendra Sharma
-pubDatetime: 2023-06-11T10:28:17Z
+pubDatetime: 2023-06-11T18:07:05Z
 title: Gas Optimization Deep Dive v1
 
 tags:
