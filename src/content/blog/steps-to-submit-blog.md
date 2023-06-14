@@ -10,6 +10,10 @@ description: How To Submit your blogs for Review
 
 ## Table of contents
 
+## 📽️ Step by Step YouTube Video
+
+[![Steps to Submit blog on web3sec.news](https://img.youtube.com/vi/8LUK2WNd4xA/0.jpg)](https://www.youtube.com/watch?v=8LUK2WNd4xA)
+
 ## Submitting blog
 Detailed Steps oh how to Submit & get your blog published.
 
