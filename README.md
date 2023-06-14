@@ -65,6 +65,10 @@ To get started, make sure you have the following:
 - Basic knowledge of Markdown syntax. If you're new to Markdown, check out this [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/) to get familiar with the syntax.
 
 ## ✍️ Writing and Submitting a Blog
+
+### 🎥 Youtube Video
+[![Steps to Submit blog on web3sec.news](https://img.youtube.com/vi/8LUK2WNd4xA/0.jpg)](https://www.youtube.com/watch?v=8LUK2WNd4xA)
+
 Follow these steps to write and submit your blog:
 
 1. **Fork the Repository**: Visit the [Web3sec.News Blog repository](https://github.com/Web3secNews/blog/) and click on the "Fork" button in the top-right corner of the page. This action will create a copy of the repository under your GitHub account.
