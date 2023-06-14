@@ -151,7 +151,7 @@ Congratulations! You've successfully submitted your blog for review and publishi
 If you have any suggestions/feedback, you can contact me via [my email](mailto:chirag@web3sec.news). Alternatively, feel free to open an issue if you find bugs or want to request new features.
 
 ## 🤝 Supported By
-[Patrick Collins, CEO Cyfrin Audit](https://www.cyfrin.io/) & [OpenSense](https://www.opensense.pw/)
+[Patrick Collins, CEO Cyfrin Audit](https://www.cyfrin.io/) & [Audit Wizard](https://www.auditwizard.io/)
 
 #### Feel free to give it a ⭐ & share this with the Web3 community 🥳
 
