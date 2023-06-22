@@ -44,6 +44,7 @@ Contrary to conventional contracts, smart contracts not only describe rules but 
 - [ ]  **Upgrade with Caution:** Carefully examine modifications for security implications before applying upgrades. Avoid making an upgrade a hacker entry point!
 - [ ]  **Manage your wallet securely** by guarding your private keys like priceless items. For increased security, use hardware wallets or cold storage options.
 - [ ]  **Examine formal validation :** get your contracts mathematically proven and verify the correctness and security properties of smart contracts to ensure things are align as intended.
+- [ ]  **Gas Limit Considerations:** Be aware of gas restrictions to prevent circumstances where there isn't enough gas, which could cause a contract to fail or make you a target for attackers.
 - [ ]  **Beware of coding an invariant** that strictly checks the balance of a contract.
 - [ ]  **Make sure that there is a backup plan** in place in case one party cannot complete the required step in order to execute a refund or claim.
 - [ ]  **Use Multi-sig:** For crucial operations, use multi signature wallets to lower the chance of single point failures. Shared security entails shared responsibility!
