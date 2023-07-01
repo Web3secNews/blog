@@ -1,12 +1,12 @@
 ---
 author: Hemendra Sharma
-pubDatetime: 2023-06-11T18:07:05Z
+pubDatetime: 2023-07-01T11:29:17+0000
 title: Gas Optimization Deep Dive v2
 
 tags:
   - web3sec
   - gas optimization
-description: Boosting Optimization and Reducing Costs
+description: Boosting Optimization and Reducing Gas Costs
 ---
 
 <em>Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on [web3sec.news](https://web3sec.news/)
@@ -20,53 +20,53 @@ from the latest news to blockchain tech and audits, and receive feedback and exc
 
 ## GAS OPTIMIZATION TECHNIQUES
 
-1. `array[index] += amount` is cheaper than `array[index] = array[index] + amount`
-   > When you use array[index] += amount, the compiler knows that you are specifically modifying the value at array[index] by adding amount to it. This allows the compiler to generate optimized bytecode that directly performs the addition operation in place, without needing to read the original value from memory.
-   > <br>On the other hand, when you use array[index] = array[index] + amount, the compiler interprets it as two separate operations: reading the original value at array[index] and then performing the addition. This results in additional bytecode instructions to read the original value from memory before performing the addition operation.
+### 1. array[index] += amount` is cheaper than `array[index] = array[index] + amount
+- When you use array[index] += amount, the compiler knows that you are specifically modifying the value at array[index] by adding amount to it. This allows the compiler to generate optimized bytecode that directly performs the addition operation in place, without needing to read the original value from memory.
+- On the other hand, when you use array[index] = array[index] + amount, the compiler interprets it as two separate operations: reading the original value at array[index] and then performing the addition. This results in additional bytecode instructions to read the original value from memory before performing the addition operation.
 
-```python
-a. For array[index] += amount
+  ```python
+  a. For array[index] += amount
+  
+  SLOAD          // Load original value from storage to the stack
+  PUSH1 amount   // Push the 'amount' value to the stack
+  ADD            // Add 'amount' to the original value
+  SSTORE         // Store the result back to storage
+  
+  b.For array[index] = array[index] + amount
+  
+  SLOAD          // Load original value from storage to the stack
+  DUP1           // Duplicate the original value
+  PUSH1 amount   // Push the 'amount' value to the stack
+  ADD            // Add 'amount' to the duplicated value
+  SSTORE         // Store the result back to storage
+  
+  ```
 
-SLOAD          // Load original value from storage to the stack
-PUSH1 amount   // Push the 'amount' value to the stack
-ADD            // Add 'amount' to the original value
-SSTORE         // Store the result back to storage
+### 2. Use calldata instead of memory for function arguments that do not get mutated
 
-b.For array[index] = array[index] + amount
+  **Example**
 
-SLOAD          // Load original value from storage to the stack
-DUP1           // Duplicate the original value
-PUSH1 amount   // Push the 'amount' value to the stack
-ADD            // Add 'amount' to the duplicated value
-SSTORE         // Store the result back to storage
+  Here the function only reads the data and doesn't modify it, we use calldata to optimize gas costs.
 
-```
+  ```solidity
+  contract MyContract {
+      function processInput(uint256[] calldata data) external pure returns (uint256) {
+          uint256 sum = 0;
+  
+          for (uint256 i = 0; i < data.length; i++) {
+              sum += data[i];
+          }
+  
+          return sum;
+      }
+  }
+  ```
 
-2. Use calldata instead of memory for function arguments that do not get mutated
+### 3. Using `private` rather than `public` for constants saves gas
+### 4. Use != 0 instead of > 0 for unsigned integer comparison
+### 5. State variables should be cached in stack variables rather than re-reading them from the storage
 
-example
-
-Here the function only reads the data and doesn't modify it, we use calldata to optimize gas costs.
-
-```solidity
-contract MyContract {
-    function processInput(uint256[] calldata data) external pure returns (uint256) {
-        uint256 sum = 0;
-
-        for (uint256 i = 0; i < data.length; i++) {
-            sum += data[i];
-        }
-
-        return sum;
-    }
-}
-```
-
-3. Using `private` rather than `public` for constants, saves gas
-4. Use != 0 instead of > 0 for unsigned integer comparison
-5. State variables should be cached in stack variables rather than re-reading them from storage
-
-example
+  **Example**
 
 ```solidity
 contract Caching {
@@ -81,25 +81,26 @@ contract Caching {
 
 ```
 
-6.Use assembly to check for address(0)
-example
+### 6. Use assembly to check for address(0)
 
-```solidity
-function isZeroAddress(address _addr) external pure returns (bool) {
-    bool isZero;
+  **Example**
 
-    assembly {
-        isZero := iszero(_addr)
-    }
-
-    return isZero;
-}
-
-```
+  ```solidity
+  function isZeroAddress(address _addr) external pure returns (bool) {
+      bool isZero;
+  
+      assembly {
+          isZero := iszero(_addr)
+      }
+  
+      return isZero;
+  }
+  
+  ```
 
 Thank you for reading ✌🏻
 
-**Please feel free to share your feedback & stay tuned for the upcoming “Gas Optimization Deep Dive Series ✅**
+**Please feel free to share your feedback & stay tuned for the upcoming “Gas Optimization Deep Dive v3 ✅**
 
 > Written By
 
