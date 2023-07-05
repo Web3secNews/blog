@@ -1,8 +1,8 @@
 ---
 author: Chirag Agrawal
 pubDatetime: 2023-07-05T18:12:17Z
-title:  Audit Checklist for Common Smart Contract Vulnerabilities 
-description: Checklist of Smart Contract Security vulnerabilities while Auditing Smart Contracts
+title:  Common Smart Contract Vulnerabilities Audit Checklist 
+description: List of Smart Contract Security Vulnerabilities for Auditing Smart Contracts
 tags:
   - audit
   - smartcontracts
