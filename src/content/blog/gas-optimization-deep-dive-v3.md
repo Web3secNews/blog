@@ -142,7 +142,7 @@ uint256 bigNumber;      // Storage slot 1
 
 Thank you for reading ✌🏻
 
-**Please feel free to share your feedback & stay tuned for the upcoming “Gas Optimization Deep Dive v3 ✅**
+**Please feel free to share your feedback & stay tuned for the upcoming “Gas Optimization Deep Dive v4 ✅**
 
 > Written By
 
