@@ -1,8 +1,8 @@
 ---
 author: cholakov Audits
 pubDatetime: 2023-08-17T18:18:29Z
-title: EIP-150 and the 63/64 Rule 
-description: EIP-150 and the 63/64 Rule
+title: EIP-150 and 63_64 Rule 
+description: EIP-150 and the 63_64 Rule
 tags:
   - web3sec
   - smartcontracts
