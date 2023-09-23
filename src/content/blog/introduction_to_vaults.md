@@ -1,12 +1,12 @@
 ---
 author: Hemendra Sharma
 pubDatetime: 2023-09-23T18:07:05Z
-title: Introduction to ERC46426 Tokenized vault standard
+title: Introduction to ERC4626 Tokenized vault standard
 
 tags:
   - web3sec
   - EIP
-description: Introduction to ERC46426 Tokenized vault standard
+description: Introduction to ERC4626 Tokenized vault standard
 ---
 
 <em>Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on [web3sec.news](https://web3sec.news/)
