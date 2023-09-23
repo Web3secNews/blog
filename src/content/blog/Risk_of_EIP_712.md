@@ -1,11 +1,11 @@
 ---
 author: Chinmay Farkya
 pubDatetime: 2023-09-23T10:15:32Z
-title: Auditors Digest: The risks of EIP712
+title: The risks of EIP712
 tags:
   - web3sec
   - EIP
-description: Auditors Digest: The risks of EIP712
+description: Auditors Digest, The risks of EIP712
 ---
 
 <em>The Auditor’s Digest is a series of articles dedicated to a comprehensive security outlook at various code components in Defi. This article lists vulnerabilities related to the use of EIP712 for typed structured data hashing and signing in Ethereum. More information about EIP712 here.</em>
