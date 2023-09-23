@@ -1,6 +1,6 @@
 ---
 author: Chinmay Farkya
-pubDatetime: 2023-09-23T18:07:05Z
+pubDatetime: 2023-09-23T10:15:32Z
 title: Auditors Digest: The risks of EIP712
 tags:
   - web3sec
