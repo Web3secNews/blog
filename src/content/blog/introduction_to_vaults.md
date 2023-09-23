@@ -125,6 +125,7 @@ These processes ensure fair and accurate conversion of assets to shares and vice
 - Now lets see how the conversion between assets and shares works. So the functions used for conversions are **convertToShares** and **convertToAssets**
   - ConvertToShares : Takes asset as input and gives output as ```(assets x totalSupply) / totalAssets()```
   - ConvertToAssets : Takes share as input and gives output as ```(shares X totalAssets() / totalSupply )```
+  
   >  **shares**: The input amount of shares that the user wants to convert to assets <br> **assets**: The input amount of assets that the user wants to convert to shares. <br> **totalSupply**: The total supply of shares in the vault
 
 Will discuss more in depth  about vulneribilities and secure implementation of vaults in upcoming blogs.
