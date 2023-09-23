@@ -8,7 +8,7 @@ tags:
 description: Auditors Digest: The risks of EIP712
 ---
 
-The Auditor’s Digest is a series of articles dedicated to a comprehensive security outlook at various code components in Defi. This article lists vulnerabilities related to the use of EIP712 for typed structured data hashing and signing in Ethereum. More information about EIP712 here.
+<em>The Auditor’s Digest is a series of articles dedicated to a comprehensive security outlook at various code components in Defi. This article lists vulnerabilities related to the use of EIP712 for typed structured data hashing and signing in Ethereum. More information about EIP712 here.</em>
 
 ## Use of wrong contract address in Domain Separator
 The Domain separator is made up of TYPE_HASH, name, version, chainID, and verifyingContract. If any of these components is left out or manipulated, then the hashing and verification will not work correctly.
