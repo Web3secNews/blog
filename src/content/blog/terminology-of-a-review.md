@@ -10,7 +10,7 @@ tags:
 description: Clarifying the terminology; security audit/review, static analysis, fuzzing, symbolic execution, formal verification, FREI-PI.
 ---
 
-![Terminology of a Review](https://github.com/Web3secNews/blog/blob/main/public/media/terminology-of-a-review_01.png)
+![Terminology of a Review](https://github.com/Web3secNews/blog/blob/main/public/media/terminology-of-a-review_01.png?raw=true)
 
 _Navigating the rambling world of smart contract security can be a challenge, especially when you're swarmed with a slew of technical jargon. As I’m relatively new to this landscape, I find myself standing on the shoulders of giants, and I've learned the importance of understanding its specialized terminology. This article, heavily based on references listed at the end, aims to clarify some of these terms._
 
