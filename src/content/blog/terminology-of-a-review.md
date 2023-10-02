@@ -1,6 +1,6 @@
 ---
 author: polarzero
-pubDatetime: 2023-09-18T06:00:13.911Z
+pubDatetime: 2023-10-02T06:00:13.911Z
 title: "Smart Contract Security: Terminology of a Review"
 tags:
   - web3sec
