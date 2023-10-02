@@ -1,3 +1,4 @@
+# FUNDING RATE AND PERPETUAL PROTOCOLS
 If you are into blockchain security space you may have notice that lots of Perpetual protocols are emerging (GMX, etc). Auditing this type of protocols is not easy as the introduce complex terms, for example…
 
 Have you ever heard about the “Funding Rate”?
