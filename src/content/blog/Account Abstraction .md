@@ -1,18 +1,14 @@
 ---
-
 title: ACCOUNT Abstraction And EIP 4337
 pubDatetime: 2023-10-04T05:50:19Z
-
-
 
 tags:
   - web3sec
   - Account Abstraction
 description: EIP -4337 and its use cases with Account Abstraction to provide More Security And  Decentralization
---- 
-
 ---
 
+---
 
 Account abstraction allows users to customize how they interact with the Ethereum blockchain according to their needs. Normally, users interact with Ethereum using an externally-owned account (EOA) or contract account associated with one unique private key. Anyone with a private key can execute arbitrary transactions with no restrictions.
 
@@ -27,9 +23,7 @@ An important thing to understand about account abstraction is that it doesn’t 
 Ethereum has two types of accounts: Externally-owned accounts (EOAs) and Smart Contracts.
 
 1. **EOAs** are the traditional accounts that you create with a wallet like MetaMask. They have a hidden private key and a derived public address and are what most users use to interact with the blockchain.
-    
 2. **Smart contracts** are programmable applications that can perform transactions but do not have an associated private key. EOAs or other smart contracts can transact with these entities, performing a predetermined set of actions based on their program logic. Many DeFi and wallet applications on Ethereum are built on smart contract accounts.
-    
 
 ![](https://assets-global.website-files.com/6267eac265e445963ae53e81/63c6476b6d2554abfd85c8fe_%233-Inside%20article.jpg align="left")
 
@@ -51,18 +45,13 @@ Through EIP-4337 and its implementation on the Mainnet, the Ethereum community s
 
 There are a number of key technical components of account abstraction, including:
 
-* UserOperation
-    
-* Bundler
-    
-* Entry Point
-    
-* Account contract (and its associated `Account Factory` contract)
-    
-* Paymaster
-    
+- UserOperation
+- Bundler
+- Entry Point
+- Account contract (and its associated `Account Factory` contract)
+- Paymaster
 
-The ***UserOperation*** is an ABI-encoded structure. It describes the transaction executed by the user. They are not allowed to access any information that alter like current blocktime , number, hash. They are only allowed to access data related to sender address. They are pseudo-transaction objects that express a user's intent.
+The **_UserOperation_** is an ABI-encoded structure. It describes the transaction executed by the user. They are not allowed to access any information that alter like current blocktime , number, hash. They are only allowed to access data related to sender address. They are pseudo-transaction objects that express a user's intent.
 
 Below data is from Ethereum organization with the source code availability)
 
@@ -70,23 +59,23 @@ Below data is from Ethereum organization with the source code availability)
 
 ![pasted image 0](https://images.ctfassets.net/v0qht4wq59vi/6daqeWjFnsiM0c7M7HyjiG/b9fa0c9fda61d27616318bdb0217d198/pasted_image_0.png align="left")
 
-The ***Bundler*** is a block builder that bundles multiple UserOperation from the separate UserOperation mempool and sends the bundle to the `Entrypoint` contract, Not all blockbuilders on the network are bundlers.
+The **_Bundler_** is a block builder that bundles multiple UserOperation from the separate UserOperation mempool and sends the bundle to the `Entrypoint` contract, Not all blockbuilders on the network are bundlers.
 
 Simulation Rationale
 
 In order to add a UserOperation into the mempool and then later to the bundel, we need to "stimulate" its validation to make sure it is valid, and that it is capable o playing for its own execution . in addition , we need to verify that the same will hold true when executed on-chain. A useroperation is not allowed to access any information that might change between simulation and execution, such as current blocktime , number, hash, etc. There are 3 special contracts that interact with the account: the factory (initcode) that deploys the contract , the paymaster that can pay or the gas, and signature aggregator
 
-(***The Highlighted address is a ERC 4337 transaction Bundler***)
+(**_The Highlighted address is a ERC 4337 transaction Bundler_**)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696269568240/cf7eb8f5-1cbb-4c93-a295-2021d499c7e5.png align="center")
 
 ### EntryPoint:
 
-The ***EntryPoint*** contract is a singleton smart contract on Ethereum that handles the verification and execution of all bundles of user operations.
+The **_EntryPoint_** contract is a singleton smart contract on Ethereum that handles the verification and execution of all bundles of user operations.
 
-The ***Account contract*** is the smart contract wallet of the user that performs signature verification and processes transactions on behalf of the user. The `Account Factory` contract creates the Account contract.
+The **_Account contract_** is the smart contract wallet of the user that performs signature verification and processes transactions on behalf of the user. The `Account Factory` contract creates the Account contract.
 
-The ***Paymaster*** contract is an optional smart contract that can sponsor gas fees for user account contracts, so users without any ETH to pay for gas fees can still interact with Ethereum.
+The **_Paymaster_** contract is an optional smart contract that can sponsor gas fees for user account contracts, so users without any ETH to pay for gas fees can still interact with Ethereum.
 
 Vitalik Buterin has summarized the architecture and high-level control flow of account abstraction in the two images below.
 
@@ -98,12 +87,9 @@ Account abstraction architecture. Source: [**Ethereum Improvement Proposals**](h
 
 They can agree to sponser a transaction for an account.
 
-* application developers can easily subsidize fees for their users;
-    
-* users can pay gas fees with ERC-20 tokens or off-chain payment methods like credit cards or other subscription services;
-    
-* On-chain credit services
-    
+- application developers can easily subsidize fees for their users;
+- users can pay gas fees with ERC-20 tokens or off-chain payment methods like credit cards or other subscription services;
+- On-chain credit services
 
 ```solidity
 function validatePaymasterUserOp
@@ -134,10 +120,8 @@ function withdrawStake(address payable withdrawAddress) external
 
 There are currently [two common types of paymasters according to Account Abstraction development firm StackUp:](https://docs.stackup.sh/docs)
 
-* **Verifying Paymaster:** provide gas abstractions linked to an off-chain process. For example, it can enable users to pay for their transaction fees with a credit card or subscription service without sacrificing custody of their account.
-    
-* **Deposit Paymaster:** provide gas abstractions linked to an ERC-20 token on-chain.
-    
+- **Verifying Paymaster:** provide gas abstractions linked to an off-chain process. For example, it can enable users to pay for their transaction fees with a credit card or subscription service without sacrificing custody of their account.
+- **Deposit Paymaster:** provide gas abstractions linked to an ERC-20 token on-chain.
 
 ### Aggregator:
 
@@ -197,36 +181,28 @@ Smart accounts are not only bound to ECDSA signatures (the only ones used by EOA
 
 ### Meta Transaction x AA:
 
-*Problems with the meta transaction is :*
+_Problems with the meta transaction is :_
 
-* Extra Gas Cost o 21,000/transaction
-    
-* Need to figure out who will pay and connect.
-    
-* Censorship Vector
-    
+- Extra Gas Cost o 21,000/transaction
+- Need to figure out who will pay and connect.
+- Censorship Vector
 
-[*AA over Meta Transactions :*](https://www.alchemy.com/overviews/4337-vs-2771#:~:text=While%20Meta%20Transactions%20require%20updates,preferred%20option%20over%20Meta%20Transactions.)
+[_AA over Meta Transactions :_](https://www.alchemy.com/overviews/4337-vs-2771#:~:text=While%20Meta%20Transactions%20require%20updates,preferred%20option%20over%20Meta%20Transactions.)
 
-* No Smart Contract Changes are Required.
-    
-* Frictionless Switching Between Bundler and Paymaster Services.
-    
-* No need to adopt Proprietary Relayers.
-    
-* No Developer Tooling Lock-in.
-    
-* More Decentralization.
-    
+- No Smart Contract Changes are Required.
+- Frictionless Switching Between Bundler and Paymaster Services.
+- No need to adopt Proprietary Relayers.
+- No Developer Tooling Lock-in.
+- More Decentralization.
 
 ### Does AA compete with MPC?
 
 MPC wallets break a single key into individual shards. This way, rather than a single owner having to be responsible for a private key, multiple parties can hold partitions of the private key. With threshold signatures, a subset of them can come together to sign a transaction.
 
-*&lt;Mempool is a buffer that holds data on unconfirmed transactions that have yet to be added to the blockchain.&gt;*
+_&lt;Mempool is a buffer that holds data on unconfirmed transactions that have yet to be added to the blockchain.&gt;_
 
 **About the Writer**
 
 - Name: Saurabh Sisodia
 - GitHub: [sskninja](https://github.com/sskninja)
-- Twitter: [@Saurabh33838818](https://twitter.com/Saurabh33838818) 
+- Twitter: [@Saurabh33838818](https://twitter.com/Saurabh33838818)
