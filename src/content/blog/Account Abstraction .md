@@ -1,16 +1,15 @@
 ---
+author: Saurabh
+pubDatetime: 2023-10-09T05:50:19Z
 title: ACCOUNT Abstraction And EIP 4337
-pubDatetime: 2023-10-04T05:50:19Z
-
 tags:
   - web3sec
   - Account Abstraction
-description: EIP -4337 and its use cases with Account Abstraction to provide More Security And  Decentralization
+description: EIP-4337 Enhancing security and decentralization through Account Abstraction in Ethereum.
 ---
 
----
 
-Account abstraction allows users to customize how they interact with the Ethereum blockchain according to their needs. Normally, users interact with Ethereum using an externally-owned account (EOA) or contract account associated with one unique private key. Anyone with a private key can execute arbitrary transactions with no restrictions.
+_Account abstraction allows users to customize how they interact with the Ethereum blockchain according to their needs. Normally, users interact with Ethereum using an externally owned account (EOA) or contract account associated with one unique private key. Anyone with a private key can execute arbitrary transactions with no restrictions._
 
 ![](https://assets-global.website-files.com/6267eac265e445963ae53e81/63c6469b1eafa48078f9b8a6_%231-Inside%20article.jpg align="left")
 
@@ -51,21 +50,21 @@ There are a number of key technical components of account abstraction, including
 - Account contract (and its associated `Account Factory` contract)
 - Paymaster
 
-The **_UserOperation_** is an ABI-encoded structure. It describes the transaction executed by the user. They are not allowed to access any information that alter like current blocktime , number, hash. They are only allowed to access data related to sender address. They are pseudo-transaction objects that express a user's intent.
+The **_UserOperation_** is an ABI-encoded structure. It describes the transaction executed by the user. They are not allowed to access any information that alters like current blocktime, number, or hash. They are only allowed to access data related to the sender's address. They are pseudo-transaction objects that express a user's intent.
 
-Below data is from Ethereum organization with the source code availability)
+The below data is from the Ethereum organization with the source code availability)
 
 <table><tbody><tr><td colspan="1" rowspan="1"><p><code>sender</code></p></td><td colspan="1" rowspan="1"><p><code>address</code></p></td><td colspan="1" rowspan="1"><p>The account making the operation</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>nonce</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>Anti-replay parameter (see “Semi-abstracted Nonce Support” )</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>initCode</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>The initCode of the account (needed if and only if the account is not yet on-chain and needs to be created)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>callData</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>The data to pass to the <code>sender</code> during the main execution call</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>callGasLimit</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>The amount of gas to allocate the main execution call</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>verificationGasLimit</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>The amount of gas to allocate for the verification step</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>preVerificationGas</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>The amount of gas to pay for to compensate the bundler for pre-verification execution, calldata and any gas overhead that can’t be tracked on-chain</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>maxFeePerGas</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>Maximum fee per gas (similar to <a target="_blank" rel="noopener noreferrer nofollow" href="https://eips.ethereum.org/EIPS/eip-1559" style="pointer-events: none">EIP-1559</a> <code>max_fee_per_gas</code>)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>maxPriorityFeePerGas</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>Maximum priority fee per gas (similar to EIP-1559 <code>max_priority_fee_per_gas</code>)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>paymasterAndData</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>Address of paymaster sponsoring the transaction, followed by extra data to send to the paymaster (empty for self-sponsored transaction)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>signature</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>Data passed into the account along with the nonce during the verification step</p></td></tr></tbody></table>
 
 ![pasted image 0](https://images.ctfassets.net/v0qht4wq59vi/6daqeWjFnsiM0c7M7HyjiG/b9fa0c9fda61d27616318bdb0217d198/pasted_image_0.png align="left")
 
-The **_Bundler_** is a block builder that bundles multiple UserOperation from the separate UserOperation mempool and sends the bundle to the `Entrypoint` contract, Not all blockbuilders on the network are bundlers.
+The **_Bundler_** is a block builder that bundles multiple UserOperation from the separate UserOperation mempool and sends the bundle to the `Entrypoint` contract, Not all block builders on the network are bundlers.
 
 Simulation Rationale
 
-In order to add a UserOperation into the mempool and then later to the bundel, we need to "stimulate" its validation to make sure it is valid, and that it is capable o playing for its own execution . in addition , we need to verify that the same will hold true when executed on-chain. A useroperation is not allowed to access any information that might change between simulation and execution, such as current blocktime , number, hash, etc. There are 3 special contracts that interact with the account: the factory (initcode) that deploys the contract , the paymaster that can pay or the gas, and signature aggregator
+In order to add a UserOperation into the mempool and then later to the bundle, we need to "stimulate" its validation to make sure it is valid, and that it is capable of playing for its own execution. in addition, we need to verify that the same will hold true when executed on-chain. A user operation is not allowed to access any information that might change between simulation and execution, such as current block time, number, hash, etc. There are 3 special contracts that interact with the account: the factory (init code) that deploys the contract, the paymaster that can pay for the gas, and the signature aggregator
 
-(**_The Highlighted address is a ERC 4337 transaction Bundler_**)
+(**_The Highlighted address is an ERC 4337 transaction Bundler_**)
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696269568240/cf7eb8f5-1cbb-4c93-a295-2021d499c7e5.png align="center")
 
@@ -85,7 +84,7 @@ Account abstraction architecture. Source: [**Ethereum Improvement Proposals**](h
 
 ### Paymaster:
 
-They can agree to sponser a transaction for an account.
+They can agree to sponsor a transaction for an account.
 
 - application developers can easily subsidize fees for their users;
 - users can pay gas fees with ERC-20 tokens or off-chain payment methods like credit cards or other subscription services;
@@ -169,11 +168,11 @@ Benefit: increased security & ease of use for Web3 account access
 
 ### **New Web Authentication Standard**
 
-When the WebAuthn standard is integrated, private key authentication is built into browser logic. Smart contract wallets interact with these browsers and recognize the private key, leveraging AA to match/confirm it. This lets the wallet interact directly with the application without inputting login data. It simplifies login process on multiple platforms.
+When the WebAuthn standard is integrated, private key authentication is built into browser logic. Smart contract wallets interact with these browsers and recognize the private key, leveraging AA to match/confirm it. This lets the wallet interact directly with the application without inputting login data. It simplifies the login process on multiple platforms.
 
 ### **Multi-Signature Authorization**
 
-Sophisticated signature schemes, ulti-signature authorization allows multiple parties to control a single account, providing additional security and control. This is particularly useful for organizations or groups where decisions must be made collectively. Signers can be added or removed without a limit (as opposed to [MPC wallets](https://blog.ambire.com/best-mpc-wallets/), which can only define a signer set once).
+Sophisticated signature schemes and multi-signature authorization allow multiple parties to control a single account, providing additional security and control. This is particularly useful for organizations or groups where decisions must be made collectively. Signers can be added or removed without a limit (as opposed to [MPC wallets](https://blog.ambire.com/best-mpc-wallets/), which can only define a signer set once).
 
 ### **Support For Quantum-Secure Algos**
 
@@ -183,7 +182,7 @@ Smart accounts are not only bound to ECDSA signatures (the only ones used by EOA
 
 _Problems with the meta transaction is :_
 
-- Extra Gas Cost o 21,000/transaction
+- Extra Gas Cost of 21,000/transaction
 - Need to figure out who will pay and connect.
 - Censorship Vector
 
@@ -191,7 +190,7 @@ _Problems with the meta transaction is :_
 
 - No Smart Contract Changes are Required.
 - Frictionless Switching Between Bundler and Paymaster Services.
-- No need to adopt Proprietary Relayers.
+- No need to adopt Proprietary Layers.
 - No Developer Tooling Lock-in.
 - More Decentralization.
 
