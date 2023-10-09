@@ -1,7 +1,7 @@
 ---
 author: Saurabh
 pubDatetime: 2023-10-09T05:50:19Z
-title: ACCOUNT Abstraction And EIP 4337
+title: Account Abstraction: EIP 4337 Unveiled
 tags:
   - web3sec
   - Account Abstraction
