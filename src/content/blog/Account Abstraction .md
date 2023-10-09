@@ -1,7 +1,7 @@
 ---
 author: Saurabh
 pubDatetime: 2023-10-09T05:50:19Z
-title: Account Abstraction: EIP 4337 Unveiled
+title: Account Abstraction EIP 4337 Unveiled
 tags:
   - EIP
   - Account Abstraction
