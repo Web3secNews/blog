@@ -11,7 +11,7 @@ description: EIP-4337 Enhancing security and decentralization through Account Ab
 
 _Account abstraction allows users to customize how they interact with the Ethereum blockchain according to their needs. Normally, users interact with Ethereum using an externally owned account (EOA) or contract account associated with one unique private key. Anyone with a private key can execute arbitrary transactions with no restrictions._
 
-![](https://assets-global.website-files.com/6267eac265e445963ae53e81/63c6469b1eafa48078f9b8a6_%231-Inside%20article.jpg align="left")
+![](https://assets-global.website-files.com/6267eac265e445963ae53e81/63c6469b1eafa48078f9b8a6_%231-Inside%20article.jpg)
 
 With account abstraction, users can have more granular control. This could be requiring multiple signatures to trigger a transaction, enabling social recovery, or implementing restrictions on the smart contracts that the user account is allowed to interact with.
 
@@ -24,7 +24,7 @@ Ethereum has two types of accounts: Externally-owned accounts (EOAs) and Smart C
 1. **EOAs** are the traditional accounts that you create with a wallet like MetaMask. They have a hidden private key and a derived public address and are what most users use to interact with the blockchain.
 2. **Smart contracts** are programmable applications that can perform transactions but do not have an associated private key. EOAs or other smart contracts can transact with these entities, performing a predetermined set of actions based on their program logic. Many DeFi and wallet applications on Ethereum are built on smart contract accounts.
 
-![](https://assets-global.website-files.com/6267eac265e445963ae53e81/63c6476b6d2554abfd85c8fe_%233-Inside%20article.jpg align="left")
+![](https://assets-global.website-files.com/6267eac265e445963ae53e81/63c6476b6d2554abfd85c8fe_%233-Inside%20article.jpg)
 
 [EIP-86](https://eips.ethereum.org/EIPS/eip-86), which introduced a “forwarding contract” to abstract signature verification and nonce, and allow for signature certifications schemes other than ECDSA, and [EIP-2938](https://eips.ethereum.org/EIPS/eip-2938#replay-protection-1) in 2020, which would have introduced Ethereum protocol changes that would allow transactions to start from a smart contract instead of an EOA. However, both these proposals ultimately failed because they would require significant changes to core Ethereum, and thus significant development time.
 
@@ -56,7 +56,7 @@ The below data is from the Ethereum organization with the source code availabili
 
 <table><tbody><tr><td colspan="1" rowspan="1"><p><code>sender</code></p></td><td colspan="1" rowspan="1"><p><code>address</code></p></td><td colspan="1" rowspan="1"><p>The account making the operation</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>nonce</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>Anti-replay parameter (see “Semi-abstracted Nonce Support” )</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>initCode</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>The initCode of the account (needed if and only if the account is not yet on-chain and needs to be created)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>callData</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>The data to pass to the <code>sender</code> during the main execution call</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>callGasLimit</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>The amount of gas to allocate the main execution call</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>verificationGasLimit</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>The amount of gas to allocate for the verification step</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>preVerificationGas</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>The amount of gas to pay for to compensate the bundler for pre-verification execution, calldata and any gas overhead that can’t be tracked on-chain</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>maxFeePerGas</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>Maximum fee per gas (similar to <a target="_blank" rel="noopener noreferrer nofollow" href="https://eips.ethereum.org/EIPS/eip-1559" style="pointer-events: none">EIP-1559</a> <code>max_fee_per_gas</code>)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>maxPriorityFeePerGas</code></p></td><td colspan="1" rowspan="1"><p><code>uint256</code></p></td><td colspan="1" rowspan="1"><p>Maximum priority fee per gas (similar to EIP-1559 <code>max_priority_fee_per_gas</code>)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>paymasterAndData</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>Address of paymaster sponsoring the transaction, followed by extra data to send to the paymaster (empty for self-sponsored transaction)</p></td></tr><tr><td colspan="1" rowspan="1"><p><code>signature</code></p></td><td colspan="1" rowspan="1"><p><code>bytes</code></p></td><td colspan="1" rowspan="1"><p>Data passed into the account along with the nonce during the verification step</p></td></tr></tbody></table>
 
-![pasted image 0](https://images.ctfassets.net/v0qht4wq59vi/6daqeWjFnsiM0c7M7HyjiG/b9fa0c9fda61d27616318bdb0217d198/pasted_image_0.png align="left")
+![](https://images.ctfassets.net/v0qht4wq59vi/6daqeWjFnsiM0c7M7HyjiG/b9fa0c9fda61d27616318bdb0217d198/pasted_image_0.png)
 
 The **_Bundler_** is a block builder that bundles multiple UserOperation from the separate UserOperation mempool and sends the bundle to the `Entrypoint` contract, Not all block builders on the network are bundlers.
 
@@ -66,7 +66,7 @@ In order to add a UserOperation into the mempool and then later to the bundle, w
 
 (**_The Highlighted address is an ERC 4337 transaction Bundler_**)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696269568240/cf7eb8f5-1cbb-4c93-a295-2021d499c7e5.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1696269568240/cf7eb8f5-1cbb-4c93-a295-2021d499c7e5.png)
 
 ### EntryPoint:
 
@@ -80,7 +80,7 @@ Vitalik Buterin has summarized the architecture and high-level control flow of a
 
 Account abstraction architecture. Source: [**Ethereum Improvement Proposals**](https://eips.ethereum.org/EIPS/eip-4337)
 
-![pasted image 0 (1)](https://images.ctfassets.net/v0qht4wq59vi/7n6K88cFs2x43DBd8MlO2C/e78f970661ccdd8943151e98c5e67f22/pasted_image_0__1_.png align="left")
+![image](https://images.ctfassets.net/v0qht4wq59vi/7n6K88cFs2x43DBd8MlO2C/e78f970661ccdd8943151e98c5e67f22/pasted_image_0__1_.png)
 
 ### Paymaster:
 
