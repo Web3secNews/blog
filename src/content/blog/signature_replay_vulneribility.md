@@ -2,7 +2,7 @@
 author: Hemendra Sharma
 pubDatetime: 2023-10-20T14:58:48Z
 title: Signature replay vulneribility
-description: ignature replay vulneribility
+description: Signature replay vulneribility
 tags:
   - web3sec
   - smartcontracts
