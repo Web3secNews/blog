@@ -2,11 +2,12 @@
 author: Hemendra Sharma
 pubDatetime: 2023-10-20T14:58:48Z
 title: Signature replay vulneribility
-description: Smart Contract Security & Hack Overview 2023
+description: ignature replay vulneribility
 tags:
   - web3sec
   - smartcontracts
   - vulnerability
+  - signature replay
 ---
 
 <em>Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on [web3sec.news](https://web3sec.news/)The ultimate open-source platform for sharing Web3 security insights. Publish your [blog topics](https://github.com/Web3secNews/blog),
