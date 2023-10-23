@@ -22,7 +22,7 @@ from the latest news to blockchain tech and audits, and receive feedback and exc
 
 ### Understading the vulneribility
 
-> The signature replay vulnerability in the provided `VulnerableContract` arises due to the absence of safeguards against the reuse of the same signature. This flaw allows an attacker to replay a valid signature multiple times, resulting in unintended and unauthorized changes to the contract state.
+> The signature replay vulnerability in the `VulnerableContract` allows an attacker to reuse a valid signature multiple times. Once an attacker acquires a valid signature for a specific update, they can repeatedly call the `setValue` function with the same signature to modify the value multiple times. This unauthorized and unintended behavior occurs because the contract doesn't have safeguards to prevent the reuse of the same signature.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -67,7 +67,13 @@ There are some ways to prevent this vulneribility
 
 #### 1.By storing transaction hash
 
-We store the hash of each executed transaction and prevent re-execution of the same transaction. In the given contract we can see the condition `require(!_isTransactionExecuted(txHash), "Transaction has already been executed");` this will prevent this attack
+We store the hash of each executed transaction and prevent re-execution of the same transaction. The `HashMitigatedContract` prevents the signature replay attack by tracking executed transactions through a mapping that stores the transaction hash
+<br>
+
+check this part in `setValue` function -->
+`require(!_isTransactionExecuted(txHash), "Transaction has already been executed");`<br>
+
+Before executing a transaction, the contract checks if the transaction hash has already been marked as executed, ensuring that a transaction can only be executed once. After a successful execution, the contract marks the transaction as executed, preventing it from being replayed in the future. This simple but effective mitigation ensures that each signature can only be used once, maintaining the integrity of the contract state and security.
 
 ```solidity
 
@@ -120,7 +126,7 @@ contract HashMitigatedContract {
 
 #### 2.By Using expiry timestamp
 
-In another approach we use an expiry timestamp to ensure that a transaction can only be executed before a certain time.
+The `ExpiryMitigatedContract` introduces an expiry timestamp to ensure that a transaction can only be executed before a certain time. This approach helps prevent replay attacks by setting a time limit on the validity of a signature. When the setValue function is called, it checks whether the current block timestamp is before or equal to the provided \_expiry time. If the transaction has expired, the contract rejects it with the message "Transaction has expired." This ensures that a transaction can only be executed within the specified time frame. This mitigation provides an additional layer of security to prevent replay attacks by making the signatures time-sensitive and limiting their validity based on the expiration timestamp.
 
 ```solidity
 
@@ -162,7 +168,7 @@ contract ExpiryMitigatedContract {
 
 ```
 
-> There can be other attacks like cross chain replay in this case valid signature in one chain can be used in another chain and to prevent this kind of attack we need to use `chainId` in signature
+> There can be other attacks like cross chain replay in that case valid signature in one chain can be used in another chain and to prevent this kind of attack we need to use `chainId` in signature
 
 Thank you for reading ✌🏻
 
