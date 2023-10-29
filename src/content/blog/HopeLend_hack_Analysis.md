@@ -29,7 +29,7 @@ On October 18, 2023, the HopeLend protocol experienced a security breach resulti
 - Vulnerable Flashloan Logic Contract: [0x51ab0f9](https://etherscan.io/address/0x51ab0f9684d265a1defffc9701a6a3ce4ac50d98#code#F1#L225)
 - Attack Transaction: [0x1a7ee0](https://etherscan.io/tx/0x1a7ee0a7efc70ed7429edef069a1dd001fbff378748d91f17ab1876dc6d10392)
 
-> ![Attacker's Transaction](../../../public/media/hopeLend/1.png)
+ ![Attacker's Transaction](../../../public/media/hopeLend/1.png?raw=true)
 
 Fig: The attacker's initial transaction 
 
@@ -45,23 +45,23 @@ The precision loss vulnerability in HopeLend enabled the attacker to distort the
 
 - HopeSwap is based on liquidity providers that offer equal assets to pair pools in exchange for LP tokens and trading fees. The liquidity provider pool price internally uses liquidityIndex value. The system relies on this liquidityIndex to calculate fees and keep the system stable – incentivizing borrowing when supply is high, and constraining it when supply is low.
 
-> ![HopeLends Provider info](../../../public/media/hopeLend/2.png)
+ ![HopeLends Provider info](../../../public/media/hopeLend/2.png?raw=true)
  
 - To kickstart their attack, the hacker took out a flash loan within HopeLend, allowing them to temporarily borrow a substantial amount of 2,000 Wrapped Bitcoin (WBTC) with no upfront collateral.
 
-> ![Flashloan transaction](../../../public/media/hopeLend/3.png)
+ ![Flashloan transaction](../../../public/media/hopeLend/3.png?raw=true)
 
 - The attacker took the amount of the flash loan and added it to the reserve liquidity index of the pool contract. In this case, he specified an extremely high value for the liquidtyIndex option.
 
-> ![Attacker passed high value for the index](../../../public/media/hopeLend/4.png)
+ ![Attacker passed high value for the index](../../../public/media/hopeLend/4.png?raw=true)
 
 - When the higher value of liquidityIndex within the hEthWBTC contract was passed the index value got changed the value from a regular 1e27 to an abnormally high 7,560,000,001e27. 
 
-> ![abnormal change in the liquidityIndex occured](../../../public/media/hopeLend/5.png)
+ ![abnormal change in the liquidityIndex occured](../../../public/media/hopeLend/5.png?raw=true)
 
 - Because the liquidityIndex was set to such a big number (7,560,000,001e27), it created a major gap in the system's ability to track and calculate values, as shown in the image below.
 
-> ![Example of system getting unstable](../../../public/media/hopeLend/6.png)
+ ![Example of system getting unstable](../../../public/media/hopeLend/6.png?raw=true)
 
 
 - This discrepancy, influenced by the initial manipulation, allowed the attacker to borrow assets from various markets at a significantly reduced cost, essentially paying back less due to altered fee calculations and lower flash loan fees, all stemming from the modified liquidityIndex.
@@ -72,7 +72,7 @@ The precision loss vulnerability in HopeLend enabled the attacker to distort the
 
 The attack's root cause was the imprecise handling of the liquidity index during the execution of the _handleFlashLoanRepayment() function. The liquidity index is crucial for accurate asset valuation, and its manipulation enabled the attacker to exploit the system's vulnerability, resulting in substantial gains.
 
-> ![root cause ](../../../public/media/hopeLend/7.png)
+![root cause ](../../../public/media/hopeLend/7.png?raw=true)
 
 ### Protection Strategies:
 
