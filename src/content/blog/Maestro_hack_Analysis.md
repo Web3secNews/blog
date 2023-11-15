@@ -52,7 +52,7 @@ An attacker can use this exploit to steal ERC-20 tokens from a contract by deplo
 
 - The Router 2 contract from Maestro acts as an [ERC1967-style proxy](https://eips.ethereum.org/EIPS/eip-1967), delegating flow to another address. In this setup, the implementation address, where calls are directed can be changed dynamically. This change is typically initiated by the contract owner to update the contract’s logic while retaining its state, making it a more efficient and seamless upgrade.
 
- ![Proxy Contract](https://github.com/Web3secNews/blog/blob/main/public/media/media/maestro/2.png?raw=true)
+ ![Proxy Contract](https://github.com/Web3secNews/blog/blob/main/public/media/maestro/2.png?raw=true)
 
 - The attacker discovered that the public function '0x9239127f' in the Router 2 token allowance contract had an internal delegate call to the 'transferFrom' function of the implementation contract (leveraging ERC1967-style proxy).
 
