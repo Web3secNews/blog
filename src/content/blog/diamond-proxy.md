@@ -1,15 +1,18 @@
 ---
 author: Ravikiran Betha
-pubDatetime: 2023-12-05T05:50:19Z
-- GitHub: [@betharavikiran](https://github.com/betharavikiran)
-- Twitter: [@ravikiranweb3](https://twitter.com/ravikiranweb3)
+pubDatetime: 2023-12-05T09:04:37Z
 title: Diamond Proxy Pattern
 tags:
-  - eip-2535
+  - EIP2535
   - Proxy
   - Upgradeability
-description: Creating an upgradeable smart contracts.
+description: Creating an upgradeable smart contract
 ---
+*Calling all Web3 developers and security enthusiasts! Contribute and gain recognition on **[web3sec.news](https://web3sec.news/)***
+
+*The ultimate open-source platform for sharing Web3 security insights. Publish your **[blog topics](https://github.com/Web3secNews/blog)**, from the latest news to blockchain tech and audits, and receive feedback and exciting opportunities.*
+
+**[Join the vibrant Web3 security community today 🤝](https://discord.com/invite/CseAxvtrZ3)**
 
 # UPGRADE SMART CONTRACT - A DEMAND FROM BUSINESS
 The software has to change, as it has to support business operations which change based on consumer requirements. To support changes in blockchain smart contracts, proxy patterns have evolved and the developer community embraced it, while duly noting that data should remain immutable while business logic could change.
@@ -104,3 +107,9 @@ To learn more about this pattern and different flavours, refer to the below link
 ### 8. Do not leave the initialize() function unprotected
 
 ### 9. Do NOT allow any facet to be able to call selfdestruct()
+
+> Written by
+
+### Ravikiran Betha
+- GitHub: [@betharavikiran](https://github.com/betharavikiran)
+- Twitter: [@ravikiranweb3](https://twitter.com/ravikiranweb3)
