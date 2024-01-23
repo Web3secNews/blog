@@ -53,7 +53,7 @@ In relation to this last point, there are numerous additional concepts that you 
 
 I have compiled numerous resources covering a wide range of topics:
 
-![Alt text](https://github.com/JMariadlcs/blog/blob/0xjmaria/public/media/boosthub-resources.png)
+![Alt text](https://github.com/JMariadlcs/blog/blob/main/public/media/boosthub-resources.png)
 
 The link to access these resources has been freely shared within [BoostHub's Discord community](discord.gg/nzsGzNgyfY). I invite you to join and locate the materials in the 'free-resources' channel. The BoostHub community actively brings together experienced developers and auditors to assist newcomers in the space. It's the ideal platform for you to pose any questions related to web3.
 
