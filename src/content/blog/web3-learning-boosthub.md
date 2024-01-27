@@ -5,7 +5,7 @@ pubDatetime: 2024-01-27T05:17:19Z
 tags:
   - web3sec
   - smart contracts
-  - hacks
+  - resources
 description: Web3 security learning resources
 ---
 
@@ -42,7 +42,7 @@ About this last point, there are numerous additional concepts that you should fa
 
 I have compiled numerous resources covering a wide range of topics:
 
-![Alt text](https://github.com/JMariadlcs/blog/blob/main/public/media/boosthub-resources.png)
+![Alt text](https://github.com/JMariadlcs/blog/blob/main/public/media/boosthub-resources.png?raw=true)
 
 The link to access these resources has been freely shared within [BoostHub's Discord community](discord.gg/nzsGzNgyfY). I invite you to join and locate the materials in the 'free-resources' channel. The BoostHub community actively brings together experienced developers and auditors to assist newcomers in the space. It's the ideal platform for you to pose any questions related to web3.
 
