@@ -1,23 +1,12 @@
-# src/content/blog/sample-post.md
----
-title: How to Submit a blog
-author: Web3sec.News
-pubDatetime: 2023-06-04T05:17:19Z
-tags:
-  - web3sec
-  - smart contracts
-  - hacks
-description: This is the example description of the example post.
----
-
 ---
 title: Web3 security learning resources
 author: Jose María de la Cruz
-pubDatetime: 2024-01-22T05:17:19Z
+pubDatetime: 2024-01-27T05:17:19Z
 tags:
   - web3sec
   - smart contracts
   - hacks
+description: Web3 security learning resources
 ---
 
 # Web3 security learning resources by Jose María de la Cruz
@@ -32,14 +21,14 @@ When discussing specific topics that every auditor should learn, it is assumed t
 5. Nonces
 6. EIPs
 
-Once you have a solid grasp of the basics and have written and deployed some Smart Contracts, it's time to delve into DeFi. While having knowledge of TradFi (Traditional Finance) will aid in understanding many concepts, you will need to truly immerse yourself in learning how the most popular protocols work:
+Once you have a solid grasp of the basics and have written and deployed some Smart Contracts, it's time to delve into DeFi. While knowing TradFi (Traditional Finance) will aid in understanding many concepts, you will need to truly immerse yourself in learning how the most popular protocols work:
 1. Uniswap
 2. Balancer
 3. Compound
 4. Aave
 5. GMX
 
-At this stage, you may be ready to commence research and reading about specific bugs in various protocols that have been reported in the past. I highly recommend delving into the most common and well-known attack types and concepts:
+At this stage, you may be ready to start doing research and reading about specific bugs in various protocols that have been reported in the past. I highly recommend delving into the most common and well-known attack types and concepts:
 1. Front-running
 2. Oracle manipulation
 3. Slippage
@@ -49,7 +38,7 @@ At this stage, you may be ready to commence research and reading about specific 
 7. Liquidations
 8. Precision loss
 
-In relation to this last point, there are numerous additional concepts that you should familiarize yourself with. The ecosystem is vast, and the more you learn, the more proficient you will become. To assist you in this regard, I have compiled external resources that other auditors or companies have published over time. This will enable you to directly explore these resources without spending time searching for them.
+About this last point, there are numerous additional concepts that you should familiarize yourself with. The ecosystem is vast, and the more you learn, the more proficient you will become. To assist you in this regard, I have compiled external resources that other auditors or companies have published over time. This will enable you to directly explore these resources without spending time searching for them.
 
 I have compiled numerous resources covering a wide range of topics:
 
